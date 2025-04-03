@@ -1,0 +1,59 @@
+/* Default to Light Mode */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --header-color: #f4f4f4;
+    --button-background: #007bff;
+    --button-text: #ffffff;
+    --card-background: #f9f9f9;
+    --border-color: #ddd;
+  }
+  
+  /* Dark Mode Styles */
+  [data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --header-color: #333333;
+    --button-background: #4caf50;
+    --button-text: #ffffff;
+    --card-background: #1c1c1c;
+    --border-color: #444444;
+  }
+  
+  /* Apply the variables */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  header {
+    background-color: var(--header-color);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+  }
+  
